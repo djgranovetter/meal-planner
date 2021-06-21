@@ -1,6 +1,8 @@
 var http = require("http");
 var fs = require("fs");
 
+var port = process.env.port || 1337;
+
 var mealPlan = null;
 
 function serveFile(response, file, type) {
@@ -14,7 +16,7 @@ function serveFile(response, file, type) {
 }
 
 function redirectPage(response, page) {
-	response.writeHead(302, {Location: "http://localhost:8080" + page});
+	response.writeHead(302, {Location: "http://localhost:port" + page});
 	response.end();
 }
 
@@ -66,6 +68,6 @@ http.createServer((request, response) => {
 			});
 		} else notFound(response);
 	}
-}).listen(8080);
+}).listen(port);
 
-console.log("Meal Planner server running on port 8080.");
+console.log("Meal Planner server running.");
