@@ -1,7 +1,7 @@
 var http = require("http");
 var fs = require("fs");
 
-var port = process.env.port || 1337;
+var port = process.env.port || 8080;
 
 var mealPlan = null;
 
