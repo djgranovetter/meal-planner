@@ -1,6 +1,5 @@
 var http = require("http");
 var fs = require("fs");
-var domtoimage = require("dom-to-image");
 
 var mealPlan = null;
 
