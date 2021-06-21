@@ -14,7 +14,7 @@ function serveFile(response, file, type) {
 }
 
 function redirectPage(response, page) {
-	response.writeHead(302, {Location: "http://localhost:80" + page});
+	response.writeHead(302, {Location: "http://localhost:3000" + page});
 	response.end();
 }
 
@@ -66,6 +66,6 @@ http.createServer((request, response) => {
 			});
 		} else notFound(response);
 	}
-}).listen(80);
+}).listen(3000);
 
-console.log("Meal Planner server running on port 80.");
+console.log("Meal Planner server running on port 3000.");
