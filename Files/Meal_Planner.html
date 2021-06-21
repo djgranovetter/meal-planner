@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Meal Planner</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="files/meal_planner">
+</head>
+<body>
+  <h2 class="title">Meal Planner</h2>
+  <form id="planner">
+		<div>
+			<div>
+				Month: <select id="month">
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				Year: <input type="text" id="year"></input>
+			</div>
+		</div>
+		<div>
+			<p>In each text box, enter each meal separated by a line break.</p>
+			<div class="meal_plan">
+				<h3 class="days">Weekdays</h3>
+				<div class="entries">
+					<label for="breakfasts">Breakfasts:</label>
+					<textarea id="breakfasts"></textarea>
+				</div>
+				<div class="entries">
+					<label for="lunches">Lunches:</label>
+					<textarea id="lunches"></textarea>
+				</div>
+				<div class="entries">
+					<label for="dinners">Dinners:</label>
+					<textarea id="dinners"></textarea>
+				</div>
+			</div>
+			<div class="meal_plan">
+				<h3 class="days">Saturday</h3>
+				<div class="entries">
+					<label for="saturday_breakfasts">Breakfasts:</label>
+					<textarea id="saturday_breakfasts"></textarea>
+				</div>
+				<div class="entries">
+					<label for="saturday_lunches">Lunches:</label>
+					<textarea id="saturday_lunches"></textarea>
+				</div>
+				<div class="entries">
+					<label for="saturday_dinners">Dinners:</label>
+					<textarea id="saturday_dinners"></textarea>
+				</div>
+			</div>
+			<div class="meal_plan" id="holiday_meals">
+				<h3 class="days">Holiday</h3>
+				Please enter each holiday day of the month. Separate multiple days with commas. <input type="text" id="days_of_holiday" placeholder="e.g., 8, 16"></input>
+				<br/><br/>
+				<div class="entries">
+					<label for="holiday_breakfasts">Breakfasts:</label>
+					<textarea id="holiday_breakfasts"></textarea>
+				</div>
+				<div class="entries">
+					<label for="holiday_lunches">Lunches:</label>
+					<textarea id="holiday_lunches"></textarea>
+				</div>
+				<div class="entries">
+					<label for="holiday_dinners">Dinners:</label>
+					<textarea id="holiday_dinners"></textarea>
+				</div>
+			</div><br/><br/>
+			<div class="meal_plan" id="create_meal_plan">
+				<button type="button" onclick="doMealPlan()">Create Meal Plan</button>
+				<button type="button" onclick="saveMeals()">Save Meals</button>
+				<button type="button" onclick="loadMeals()">Load Meals</button>
+				<button type="button" onclick="doHolidayMeals()">Add Holiday Meals</button>
+			</div>
+		</div><br/>
+	</form>
+	<script src="/files/meal_planner_functions"></script>
+</body>
+</html>

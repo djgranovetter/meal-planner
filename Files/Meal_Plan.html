@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Meal Plan</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="files/meal_planner">
+</head>
+<body>
+	<div id="meal_plan">
+		<h2 class="table_header">Meal Plan</h2>
+		<h3 class="table_header" id="month_and_year"></h3>
+	</div>
+	<div>
+		<p class="instructions">Click on a meal to edit or change it.</p>
+	</div>
+	<br/>
+	<div id="actions">
+		<button type="button" onclick="reshuffle()">Reshuffle</button>
+		<button type="button" onclick="saveMealPlan()">Save Meal Plan</button>
+		<button type="button" onclick="loadMealPlan()">Load Meal Plan</button>
+		<button type="button" onclick="doDownload()">Download</button>
+	</div>
+	<script src="/files/dom_to_image"></script>
+	<script src="/files/meal_planner_functions"></script>
+</body>
+</html>

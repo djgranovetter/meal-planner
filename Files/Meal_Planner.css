@@ -1,0 +1,69 @@
+body {
+	background-image: url("/images/notepad");
+	font-family: "Georgia";
+	font-size: 16px;
+}
+
+label {
+	display: block;
+}
+
+input, select {
+	font-size: 16px;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+	height: 200px;
+	font-size: 16px;
+}
+
+button {
+	margin: 0px 50px;
+	font-size: 16px;
+}
+
+table {
+	background-color: white;
+}
+
+h2.title {
+	text-align: center;
+	color: crimson;
+}
+
+h3.days {
+	color: darkblue;
+}
+
+div.meal_plan {
+	overflow: hidden;
+}
+
+div.entries {
+	float: left;
+	width: 28%;
+	margin: 0 2.33%;
+}
+
+div#create_meal_plan {
+	text-align: center;
+}
+
+div#holiday_meals {
+	display: none;
+}
+
+.table_header {
+	margin-left: 24px;
+}
+
+p.instructions {
+	margin-left: 24px;
+	color: red;
+}
+
+div#actions {
+	text-align: center;
+}
